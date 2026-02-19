@@ -76,7 +76,7 @@ local hlgroups = {
         Cursor				   = { fg = colors.bg, bg = colors.cursor },
         MsgArea                            = { fg = colors.fg, bg = colors.bg},
         StatusLine                         = { fg = colors.fg_1, bg = colors.bg_1 },
-	Directory 			   = { fg = colors.gruberDarkerNiagara, bg = colors.bg },
+	Directory 			   = { fg = colors.gruberDarkerNiagara, bg = colors.bg , style = "bold" },
         ErrorMsg                           = { fg = colors.gruberDarkerRedPlus1, bg = colors.bg_1 },
         MoreMsg                            = { fg = colors.yellow, bg = colors.bg_1 },
         Search                             = { fg = colors.gruberDarkerWhite, bg = colors.gruberDarkerQuartz },
@@ -97,7 +97,7 @@ for group, colors in pairs(hlgroups) do
 			local fg = colors.fg and "guifg=" .. colors.fg .. " " or ""
 			local bg = colors.bg and "guibg=" .. colors.bg .. " " or ""
 			local style = colors.style and "gui=" .. colors.style .. " " or ""
-			local guisp = colors.guis and "guisp=" .. colors.style .. " " or ""
+			local guisp = colors.guisp and "guisp=" .. colors.guisp .. " " or ""
 			vim.cmd("hi " .. group .. " " .. fg .. bg .. style .. guisp)
 		end
 	end
