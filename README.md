@@ -10,7 +10,7 @@ theme for BBEdit by John Gruber. [Variant](https://github.com/rexim/gruber-darke
 
 # Showcase!
 
-![gruberdarker-nvim](https://i.imgur.com/oFncUO1.png)
+![gruberdarker-nvim](https://i.imgur.com/DQ6o8aY.png)
 
 # ToDo
 
