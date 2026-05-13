@@ -1,12 +1,12 @@
 -- gruberdarker.lua --- Gruber Darker color theme for NeoVim.
--- 
+--
 -- https://github.com/rexim/gruber-darker-theme/blob/master/gruber-darker-theme.el
 --
 -- Commentary:
 --
---Gruber Darker color theme for Emacs by Jason Blevins. A darker
---variant of the Gruber Dark theme for BBEdit by John Gruber. Variant
---by Alexey Kutepov a.k.a. rexim for Emacs. Adapted for Neovim
+-- Gruber Darker color theme for Emacs by Jason Blevins. A darker
+-- variant of the Gruber Dark theme for BBEdit by John Gruber. Variant
+-- by Alexey Kutepov a.k.a. rexim for Emacs. Adapted for Neovim
 
 local g = {}
 
@@ -49,39 +49,49 @@ colors.comment = colors.gruberDarkerBrown
 
 
 local hlgroups = {
-	Comment      = { fg = colors.comment, bg = colors.bg, bold = true },
-
 	Normal       = { fg = colors.fg, bg = colors.bg },
 
-	Character    = { fg = colors.yellow },
+	Comment      = { fg = colors.comment, bg = colors.bg, bold = true },
+
 	Constant     = { fg = colors.yellow },
+	String       = { fg = colors.gruberDarkerGreen },
+	Character    = { fg = colors.gruberDarkerGreen },
 	Number       = {},
 	Boolean      = { fg = colors.yellow },
-	Float        = {},
-	Conditional  = {},
+	Float        = { fg = colors.yellow },
+
+	Identifier   = { fg = colors.gruberDarkerQuartz },
+
 	Statement    = { fg = colors.yellow },
+	Conditional  = { fg = colors.yellow },
 	Repeat       = {},
 	Label        = {},
 	Keyword      = {},
 	Exception    = {},
+
+	Prefoc       = { fg = colors.gruberDarkerQuartz },
 	Include      = { fg = colors.gruberDarkerQuartz },
-	Prefoc       = {},
-	Define       = { fg = colors.yellow },
-	Macro        = {},
+	Define       = { fg = colors.gruberDarkerQuartz },
+	Macro        = { fg = colors.gruberDarkerQuartz },
 	PreCondit    = {},
-	StorageClass = {},
+
 	Type         = { fg = colors.gruberDarkerQuartz },
-	Struct       = { fg = colors.yellow },
+	StorageClass = { fg = colors.yellow },
+	Structure    = { fg = colors.yellow },
 	Typedef      = { fg = colors.yellow },
+
 	Tag          = {},
 
 	Cursor       = { fg = colors.bg, bg = colors.cursor },
+	ColorColumn  = { fg = colors.bg },
+
 	MsgArea      = { fg = colors.fg, bg = colors.bg },
 	StatusLine   = { fg = colors.fg_1, bg = colors.bg_1 },
 	Directory    = { fg = colors.gruberDarkerNiagara, bg = colors.bg },
 	ErrorMsg     = { fg = colors.gruberDarkerRedPlus1, bg = colors.bg_1 },
 	MoreMsg      = { fg = colors.yellow, bg = colors.bg_1 },
 	Search       = { fg = colors.gruberDarkerWhite, bg = colors.gruberDarkerQuartz },
+	TabLine      = { bg = colors.bg },
 }
 
 function g.schema()

@@ -16,6 +16,5 @@ theme for BBEdit by John Gruber. [Variant](https://github.com/rexim/gruber-darke
 
 I haven't fully tested this theme in every single programming language, this ToDo list may be incomplete.
 
-- [ ] Dealing with LSP.
 - [ ] Making a 1:1 copy of [gruber-darker-theme.el](https://github.com/rexim/gruber-darker-theme)
-- [ ] Better recognition on header files
+- [ x ] Better recognition on header files.
